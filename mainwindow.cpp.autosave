@@ -1,0 +1,17 @@
+#include "mainwindow.h"
+
+MainWindow::MainWindow(QWidget *parent)
+    : QMainWindow(parent)
+{
+    
+    WidgetBataille* wb = new WidgetBataille() ;
+    setCentralWidget( wb );
+
+    timer = new QTimer;
+    timer->start(10);
+}
+
+MainWindow::~MainWindow()
+{
+
+}
